@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<img src="/home/qainfotech/qa.jpg"  alt="qainfotech" height="8%" width="25%">
+<title>SignUp Page</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body  background="/home/qainfotech/Downloads/back.jpeg" style="background-size:cover">
+
+<center>
+<i><h1>SignUp Page</h1><i>
+<div>
+<form  action="/home/qainfotech/home.html"  method = "post" >
+<label><font size="5">First Name</font></label>
+<input type = "text" class="form-control" style="width:40%"  name = "name" required/><br>
+
+<label><font size="5">Address</font></label>
+<input type = "textarea" class="form-control" style="width:40%" id="address" rows="4" cols="500" name = "address"/><br>
+
+<label><font size="5">Email-ID</font></label>
+<input type = "email"class="form-control" style="width:40%" id="email" required/></br>
+
+<label><font size="5">Passowrd<font></label><br>
+<input type = "password" class="form-control" style="width:40%"  id = "pass" name = "password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/></br>
+
+<label><font size="5">Confirm Password</font></label><br>
+<input type = "password" class="form-control" style="width:40%" id = "cnfpass" required/></br>
+
+<label><font size="5">Gender</font></label><br>
+<input  style="width:8%" type="radio" name="gender" value="male" > Male
+<input style="width:8%"  type="radio" name="gender" value="female"> Female
+<input  style="width:8%" type="radio" name="gender" value="other"> Other<br>
+
+<label><font size="5">Date of Birth</font></label><br>
+<input class="form-control" style="width:40%" type = "date" size="30" style="width:70%" name = "date"/><br>
+
+<label><font size="5">Mobile Number</font></label><br>
+<input class="form-control" style="width:40%" type = "number" size="30" style="width:70%" name = "mob"/> <br>
+
+<label><font size="5">Languages Known</font></label><br>
+<input  style="width:8%" type="checkbox" name="java" value="Java"> Java
+<input  style="width:8%" type="checkbox" name="python" value="Python"> Python
+<input  style="width:8%" type="checkbox" name="php" value="PHP" > PHP<br>
+
+<label><font size="5">Country</font></label><br>
+<select class="form-control" style="width:40%" style="width:70%" > 
+  <option value="india">INDIA</option>
+  <option value="china">CHINA</option>
+  <option value="us">USA</option>
+  <option value="uk">UK</option>
+</select><br>
+
+<input type = "submit"class="form-control" style="width:40%;" value = "Login" onclick="return Validate()" formaction="/home/qainfotech/homebs.html"/><br><br><br>
+
+</form>
+</div>
+ <script type="text/javascript">
+    function Validate() {
+        var password = document.getElementById("pass").value;
+        var confirmPassword = document.getElementById("cnfpass").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+</script>
+
+
+<style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-size: 70% ;
+}
+</style>
+<div class="footer">
+  <p>Ankur Mangal</p>
+ <p>Contact information: <a style="color:black" href="ankurmangal@qainfotech.com">ankurmangal@qainfotech.com</a></p>
+</div> 
+
+
+</body>
+</html>
